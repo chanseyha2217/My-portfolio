@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Developer & Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SaTan Coding</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">Creative Developer</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Building beautiful digital experiences</p>
+            <button class="cta-button" data-aos="fade-up" data-aos-delay="200">View My Work</button>
+        </div>
+        <div class="hero-animation">
+            <!-- <div class="floating-circle"></div> -->
+            <!-- Hero image: place your image at `img/image.png` or update the src -->
+            <img src="img/photo_2025-09-09_08-47-03.jpg" alt="Hero — Creative developer at work" class="hero-image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">My Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Hello! I'm a passionate developer with a love for creating elegant solutions to complex problems. 
+                        My journey into tech started with curiosity and has evolved into a career dedicated to building 
+                        beautiful and functional user experiences.
+                    </p>
+                    <p class="about-paragraph">
+                        I specialize in front-end development, with expertise in modern frameworks and tools. 
+                        I believe that great design and clean code go hand in hand, and I'm committed to creating 
+                        interfaces that are not just beautiful, but also intuitive and accessible.
+                    </p>
+                    <p class="about-paragraph">
+                        Beyond coding, I'm constantly exploring new technologies, contributing to open-source projects, 
+                        and sharing knowledge with the community. My mission is to create digital products that make 
+                        a positive impact on people's lives.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            
+            <div class="skills-grid">
+                <!-- Hard Skills -->
+                <div class="skills-category">
+                    <h3 class="category-title">Technical Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript/TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React & Next.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS & Tailwind</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js & Express</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB & SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & DevOps</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skills-category">
+                    <h3 class="category-title">Soft Skills</h3>
+                    <div class="soft-skills-list">
+                        <div class="soft-skill-badge">Communication</div>
+                        <div class="soft-skill-badge">Problem Solving</div>
+                        <div class="soft-skill-badge">Team Collaboration</div>
+                        <div class="soft-skill-badge">Project Management</div>
+                        <div class="soft-skill-badge">Time Management</div>
+                        <div class="soft-skill-badge">Adaptability</div>
+                        <div class="soft-skill-badge">Creative Thinking</div>
+                        <div class="soft-skill-badge">Leadership</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favorite Subject -->
+            <div class="favorite-subject">
+                <h3 class="subject-title">My Favorite Subject</h3>
+                <div class="subject-content">
+                    <p>
+                        <strong>User Experience Design</strong> is my greatest passion. I'm fascinated by the intersection 
+                        of psychology, design, and technology. Understanding how users interact with interfaces and creating 
+                        seamless experiences that feel natural and intuitive is what drives my work.
+                    </p>
+                    <p>
+                        I love exploring micro-interactions, animations, and accessibility standards. The challenge of 
+                        making complex functionalities feel simple and elegant keeps me constantly learning and innovating.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="section-container">
+            <h2 class="section-title">Career Timeline</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024 - Present</div>
+                        <h4 class="timeline-title">Senior Frontend Engineer</h4>
+                        <p class="timeline-company">Tech Company XYZ</p>
+                        <p class="timeline-description">
+                            Leading frontend team, architecting scalable solutions, and mentoring junior developers. 
+                            Focus on performance optimization and component library development.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022 - 2024</div>
+                        <h4 class="timeline-title">Full Stack Developer</h4>
+                        <p class="timeline-company">Digital Agency ABC</p>
+                        <p class="timeline-description">
+                            Built responsive web applications, managed databases, and collaborated with design teams. 
+                            Improved application performance by 40% through optimization techniques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020 - 2022</div>
+                        <h4 class="timeline-title">Frontend Developer</h4>
+                        <p class="timeline-company">Startup DEF</p>
+                        <p class="timeline-description">
+                            Developed interactive web interfaces, implemented CSS animations, and ensured cross-browser 
+                            compatibility. Worked in agile environment with fast-paced development cycles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2019 - 2020</div>
+                        <h4 class="timeline-title">Junior Web Developer</h4>
+                        <p class="timeline-company">Web Studio GHI</p>
+                        <p class="timeline-description">
+                            Started my journey in web development, learned best practices, and built my foundation 
+                            in HTML, CSS, and JavaScript. Assisted in various client projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Time Section -->
+    <section id="interests" class="interests">
+        <div class="section-container">
+            <h2 class="section-title">What I Love Doing</h2>
+            <p class="section-subtitle">Beyond the Code</p>
+            
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">🎨</div>
+                    <h3>Design & Art</h3>
+                    <p>Exploring digital art, UI/UX design trends, and creating illustrations in my spare time.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">📚</div>
+                    <h3>Reading</h3>
+                    <p>Devouring tech books, sci-fi novels, and articles about innovation and personal growth.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>Playing indie games, exploring game mechanics, and understanding interactive storytelling.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">🏃</div>
+                    <h3>Fitness</h3>
+                    <p>Running, hiking, and staying active to maintain a healthy balance between work and life.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">🎵</div>
+                    <h3>Music</h3>
+                    <p>Listening to various genres, attending concerts, and exploring music production basics.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">🌍</div>
+                    <h3>Traveling</h3>
+                    <p>Exploring new cultures, discovering hidden gems, and gathering inspiration from around the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio. Designed and developed with ❤️</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
