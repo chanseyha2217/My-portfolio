@@ -12,13 +12,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
+// FIXED: Navbar background class toggle on scroll (Removes inline styles conflict)
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(15, 20, 25, 0.98)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.background = 'rgba(15, 20, 25, 0.95)';
+        navbar.classList.remove('scrolled');
     }
 });
 
@@ -128,7 +128,7 @@ const countObserver = new IntersectionObserver((entries) => {
                 } else {
                     entry.target.textContent = Math.floor(current) + '+';
                 }
-            }, 30);
+            }, 300);
             
             entry.target.setAttribute('data-counted', 'true');
             countObserver.unobserve(entry.target);
@@ -152,6 +152,7 @@ style.textContent = `
         background: rgba(255, 255, 255, 0.5);
         transform: scale(0);
         animation: ripple-animation 0.6s ease-out;
+        pointer-events: none;
     }
     
     @keyframes ripple-animation {
@@ -185,7 +186,7 @@ console.log('Portfolio loaded successfully! 🚀');
         }
     }
 
-    // ensure a theme is applied on load
+    // Ensure a theme is applied on load
     applyTheme(initial);
 
     if (themeToggle) {
@@ -196,4 +197,57 @@ console.log('Portfolio loaded successfully! 🚀');
             localStorage.setItem('theme', next);
         });
     }
+})();
+
+
+// Endless Looping Typewriter Effect for Hero Title Name
+(function() {
+    const targetElement = document.getElementById('typewriter-name');
+    const textToType = 'Chanseyha HOEURN';
+    let charIndex = 0;
+    let isDeleting = false;
+    
+    const typingSpeed = 100;    // Speed while writing out characters (ms)
+    const deletingSpeed = 50;   // Speed while erasing characters (ms)
+    const pauseBeforeDelete = 2500; // How long to display your full name before erasing (ms)
+    const pauseBeforeRestart = 500; // How long to wait on an empty line before re-typing (ms)
+
+    function handleTypewriterLoop() {
+        const currentText = targetElement.textContent;
+
+        if (!isDeleting) {
+            // Typing State: Add the next letter
+            targetElement.textContent = textToType.substring(0, charIndex + 1);
+            charIndex++;
+
+            // If the whole name is written out
+            if (charIndex === textToType.length) {
+                isDeleting = true;
+                // Pause for a moment so people can read your full name, then trigger delete
+                setTimeout(handleTypewriterLoop, pauseBeforeDelete);
+                return;
+            }
+        } else {
+            // Deleting State: Remove the last letter
+            targetElement.textContent = textToType.substring(0, charIndex - 1);
+            charIndex--;
+
+            // If the entire text has been erased
+            if (charIndex === 0) {
+                isDeleting = false;
+                // Brief pause on the empty line, then start typing the loop over again
+                setTimeout(handleTypewriterLoop, pauseBeforeRestart);
+                return;
+            }
+        }
+
+        // Determine speed dynamically based on current action (typing vs deleting)
+        const currentSpeed = isDeleting ? deletingSpeed : typingSpeed;
+        setTimeout(handleTypewriterLoop, currentSpeed);
+    }
+
+    // Initialize the loop with a short delay after the page loads
+    window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(handleTypewriterLoop, 400);
+    });
 })();

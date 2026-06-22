@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Developer & Designer</title>
+    <title>Chanseyha HOEURN - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">SeyHa Coding</div>
+            <div class="logo">Chanseyha Coding</div>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -28,256 +28,268 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title" data-aos="fade-up">Creative Developer</h1>
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Building beautiful digital experiences</p>
-            <button class="cta-button" data-aos="fade-up" data-aos-delay="200">View My Work</button>
-        </div>
-        <div class="hero-animation">
-            <!-- <div class="floating-circle"></div> -->
-            <!-- Hero image: place your image at `img/image.png` or update the src -->
-            <img src="img/photo_2025-09-09_08-47-03.jpg" alt="Hero — Creative developer at work" class="hero-image">
+        <!-- Geometric grid overlay effect -->
+        <div class="hero-grid-overlay"></div>
+        
+        <div class="section-container hero-container">
+            <!-- Content Column (Left Side) -->
+            <div class="hero-content">
+                <span class="hero-pretitle">HELLO, I'M</span>
+                <!-- Updated Main Name Heading with animation targets -->
+                <h1 class="hero-title">
+                    <span id="typewriter-name"></span><span class="typewriter-cursor">|</span>
+                </h1>
+                <h2 class="hero-subtitle">Frontend Developer Intern</h2>
+                <p class="hero-description">
+                    Frontend Developer Intern passionate about crafting clean, responsive UIs and building full-stack web experiences.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#timeline" class="btn-primary-cta">VIEW PROJECTS</a>
+                    <a href="#contact" class="btn-secondary-cta">GET IN TOUCH</a>
+                </div>
+            </div>
+
+            <!-- Image Column (Right Side) -->
+            <div class="hero-image-wrapper">
+                <div class="profile-image-glow"></div>
+                <img src="/img/Gemini_Generated_Image_ae6c2jae6c2jae6c.png" alt="Chanseyha HOEURN" class="hero-profile-img">
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="section-container">
             <h2 class="section-title">My Story</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-paragraph">
-                        Hello! I'm a passionate developer with a love for creating elegant solutions to complex problems. 
-                        My journey into tech started with curiosity and has evolved into a career dedicated to building 
-                        beautiful and functional user experiences.
+                        Hello! I am a passionate Web Programming student currently pursuing my Associate Degree at Passerelles Numeriques Cambodia. I love translating creative concepts into clean, functional code, with a specific focus on building beautiful digital user experiences.
                     </p>
                     <p class="about-paragraph">
-                        I specialize in front-end development, with expertise in modern frameworks and tools. 
-                        I believe that great design and clean code go hand in hand, and I'm committed to creating 
-                        interfaces that are not just beautiful, but also intuitive and accessible.
-                    </p>
-                    <p class="about-paragraph">
-                        Beyond coding, I'm constantly exploring new technologies, contributing to open-source projects, 
-                        and sharing knowledge with the community. My mission is to create digital products that make 
-                        a positive impact on people's lives.
+                        My development toolkit includes building frontend systems with modern frameworks like Vue.js as well as implementing full-stack logic and backend components. Beyond standard development, I have practical experience acting as a QA Tester, mapping out functional requirements, and ensuring applications run smoothly and reliably.
                     </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Core Projects</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-label">Happy Clients</div>
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Tech Workshops</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="section-container">
             <h2 class="section-title">Skills & Expertise</h2>
             
             <div class="skills-grid">
-                <!-- Hard Skills -->
                 <div class="skills-category">
                     <h3 class="category-title">Technical Skills</h3>
                     <div class="skills-list">
                         <div class="skill-item">
-                            <span class="skill-name">JavaScript/TypeScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React & Next.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">CSS & Tailwind</span>
+                            <span class="skill-name">HTML, CSS & JavaScript</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Node.js & Express</span>
+                            <span class="skill-name">Vue.js & Laravel</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">MongoDB & SQL</span>
+                            <span class="skill-name">PHP & Node.js</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
+                                <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Git & DevOps</span>
+                            <span class="skill-name">Python & Algorithms</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 86%"></div>
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL & Redis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Soft Skills -->
                 <div class="skills-category">
                     <h3 class="category-title">Soft Skills</h3>
                     <div class="soft-skills-list">
-                        <div class="soft-skill-badge">Communication</div>
-                        <div class="soft-skill-badge">Problem Solving</div>
-                        <div class="soft-skill-badge">Team Collaboration</div>
-                        <div class="soft-skill-badge">Project Management</div>
-                        <div class="soft-skill-badge">Time Management</div>
-                        <div class="soft-skill-badge">Adaptability</div>
-                        <div class="soft-skill-badge">Creative Thinking</div>
-                        <div class="soft-skill-badge">Leadership</div>
+                        <div class="soft-skill-badge">Good Communication</div>
+                        <div class="soft-skill-badge">Teamwork & Solidarity</div>
+                        <div class="soft-skill-badge">Problem-Solving</div>
+                        <div class="soft-skill-badge">Time & Task Management</div>
+                        <div class="soft-skill-badge">Responsibility</div>
+                        <div class="soft-skill-badge">Trust & Honest</div>
+                        <div class="soft-skill-badge">Knowledge Sharing</div>
+                        <div class="soft-skill-badge">Respectful & Friendly</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Favorite Subject -->
             <div class="favorite-subject">
-                <h3 class="subject-title">My Favorite Subject</h3>
+                <h3 class="subject-title">UI/UX & Quality Focus</h3>
                 <div class="subject-content">
                     <p>
-                        <strong>User Experience Design</strong> is my greatest passion. I'm fascinated by the intersection 
-                        of psychology, design, and technology. Understanding how users interact with interfaces and creating 
-                        seamless experiences that feel natural and intuitive is what drives my work.
-                    </p>
-                    <p>
-                        I love exploring micro-interactions, animations, and accessibility standards. The challenge of 
-                        making complex functionalities feel simple and elegant keeps me constantly learning and innovating.
+                        I am highly interested in the intersection of <strong>UX/UI Design and Quality Assurance</strong>. I believe that an impactful digital application must not only look pristine and intuitive but must also be backed by robust development standards and rigorous functional testing.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Timeline Section -->
     <section id="timeline" class="timeline">
         <div class="section-container">
-            <h2 class="section-title">Career Timeline</h2>
+            <h2 class="section-title">Projects & Experience</h2>
+            <p class="section-subtitle">A journey through my recent development work and academic projects</p>
             
             <div class="timeline-container">
+                
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-year">2024 - Present</div>
-                        <h4 class="timeline-title">Senior Frontend Engineer</h4>
-                        <p class="timeline-company">Tech Company XYZ</p>
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Mlup Dong (Restaurant Management System)</h3>
+                            <span class="timeline-year">Feb 2026 - Mar 2026</span>
+                        </div>
+                        <div class="timeline-company">Role: QA Tester & Developer</div>
                         <p class="timeline-description">
-                            Leading frontend team, architecting scalable solutions, and mentoring junior developers. 
-                            Focus on performance optimization and component library development.
+                            Designed and executed comprehensive test cases, performed functional and end-to-end system testing, and systematically tracked bugs to optimize codebase stability and ensure a flawless workflow.
                         </p>
+                        <div class="timeline-tech-stack">
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">GitHub</span>
+                        </div>
+                        <div class="timeline-actions">
+                            <a href="https://github.com/phea-ly/MlupDong-Restaurants-ManagementSystem.git" target="_blank" class="timeline-link">
+                                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                GitHub Repository
+                            </a>
+                            <a href="https://youtu.be/TRG0deu6Bsg?si=Q6ukhJtzuXdhd0dn" target="_blank" class="timeline-link">
+                                <svg viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zm2-14.5c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                                Video Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-year">2022 - 2024</div>
-                        <h4 class="timeline-title">Full Stack Developer</h4>
-                        <p class="timeline-company">Digital Agency ABC</p>
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">E-Commerce Web Project</h3>
+                            <span class="timeline-year">Dec 2025 - Jan 2026</span>
+                        </div>
+                        <div class="timeline-company">Role: Developer & Designer</div>
                         <p class="timeline-description">
-                            Built responsive web applications, managed databases, and collaborated with design teams. 
-                            Improved application performance by 40% through optimization techniques.
+                            Developed an interactive, highly responsive storefront interface. Structured key component items such as modern product listings and a dynamic live shopping cart system with seamless collaborative features.
                         </p>
+                        <div class="timeline-tech-stack">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">GitHub</span>
+                        </div>
+                        <div class="timeline-actions">
+                            <a href="https://github.com/Narith-hen/Ecommerce---project--JS---Term3.git" target="_blank" class="timeline-link">
+                                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                GitHub Repository
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-year">2020 - 2022</div>
-                        <h4 class="timeline-title">Frontend Developer</h4>
-                        <p class="timeline-company">Startup DEF</p>
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Algorithms Todo List Project</h3>
+                            <span class="timeline-year">Oct 2025 - Nov 2025</span>
+                        </div>
+                        <div class="timeline-company">Role: Full-Stack Developer</div>
                         <p class="timeline-description">
-                            Developed interactive web interfaces, implemented CSS animations, and ensured cross-browser 
-                            compatibility. Worked in agile environment with fast-paced development cycles.
+                            Designed data-driven features incorporating complete data manipulation actions (CRUD) for task items, utilizing backend algorithms to optimize performance and lower interface request processing times.
                         </p>
+                        <div class="timeline-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="timeline-actions">
+                            <span class="timeline-link" style="opacity: 0.6; cursor: default;">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                Academic Submission
+                            </span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2019 - 2020</div>
-                        <h4 class="timeline-title">Junior Web Developer</h4>
-                        <p class="timeline-company">Web Studio GHI</p>
-                        <p class="timeline-description">
-                            Started my journey in web development, learned best practices, and built my foundation 
-                            in HTML, CSS, and JavaScript. Assisted in various client projects.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Free Time Section -->
     <section id="interests" class="interests">
         <div class="section-container">
             <h2 class="section-title">What I Love Doing</h2>
-            <p class="section-subtitle">Beyond the Code</p>
+            <!-- <h4 class="section-subtitle">Beyond the Code</h4> -->
             
             <div class="interests-grid">
                 <div class="interest-card">
+                    <div class="interest-icon">💻</div>
+                    <h3>Coding & Projects</h3>
+                    <p>Building custom software logic and putting together personal engineering side projects.</p>
+                </div>
+
+                <div class="interest-card">
                     <div class="interest-icon">🎨</div>
-                    <h3>Design & Art</h3>
-                    <p>Exploring digital art, UI/UX design trends, and creating illustrations in my spare time.</p>
+                    <h3>UI/UX Design</h3>
+                    <p>Researching modern user experience flows and mapping clean interface designs.</p>
                 </div>
 
                 <div class="interest-card">
-                    <div class="interest-icon">📚</div>
-                    <h3>Reading</h3>
-                    <p>Devouring tech books, sci-fi novels, and articles about innovation and personal growth.</p>
+                    <div class="interest-icon">🚲</div>
+                    <h3>Exploring</h3>
+                    <p>Cycling and exploring new destinations to clear my mind.</p>
                 </div>
 
                 <div class="interest-card">
-                    <div class="interest-icon">🎮</div>
-                    <h3>Gaming</h3>
-                    <p>Playing indie games, exploring game mechanics, and understanding interactive storytelling.</p>
-                </div>
-
-                <div class="interest-card">
-                    <div class="interest-icon">🏃</div>
-                    <h3>Fitness</h3>
-                    <p>Running, hiking, and staying active to maintain a healthy balance between work and life.</p>
-                </div>
-
-                <div class="interest-card">
-                    <div class="interest-icon">🎵</div>
-                    <h3>Music</h3>
-                    <p>Listening to various genres, attending concerts, and exploring music production basics.</p>
-                </div>
-
-                <div class="interest-card">
-                    <div class="interest-icon">🌍</div>
-                    <h3>Traveling</h3>
-                    <p>Exploring new cultures, discovering hidden gems, and gathering inspiration from around the world.</p>
+                    <div class="interest-icon">🚀</div>
+                    <h3>Tech Research</h3>
+                    <p>Continuously looking up and experimenting with emerging open-source tech stacks.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="section-container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's create something amazing together</p>
+            <p class="section-subtitle">Based in Phnom Penh, Cambodia</p>
             
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <p>📧 <strong>Email:</strong> chanseyha.hoeurn@student.passerellesnumeriques.org</p>
+                <p>📞 <strong>Phone:</strong> 097 215 3614</p>
+                <p>📍 <strong>Address:</strong> Street 371, Phum Tropeang Chhuk (Borey Sorla), Sangkat Tek Thla, Khan Sen Sok, Phnom Penh</p>
+            </div>
+
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <input type="text" placeholder="Your Name" required>
@@ -292,17 +304,14 @@
             </form>
 
             <div class="social-links">
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">Instagram</a>
+                <a href="https://github.com/chanseyha2217" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/chanseyha-hoeurn-b435a4399/" class="social-link">LinkedIn</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 My Portfolio. Designed and developed with ❤️</p>
+        <p>&copy; 2026 Chanseyha HOEURN. Designed and developed with ❤️</p>
     </footer>
 
     <script src="js/script.js"></script>
